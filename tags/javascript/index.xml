@@ -17,18 +17,18 @@
       <description>Description The Dungeons &amp;amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.&#xA;Link: https://dungeons-and-portals.onrender.com/&#xA;Code: https://github.com/emberlzhang/task_dungeon-portals-game/tree/main&#xA;Purpose The Dungeons &amp;amp; Portals Game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.&#xA;Overview Objective: Throughout the game, the player to determine the best dungeon to enter, then tries to exit using the fewest number of teleportations through portals as possible.</description>
     </item>
     <item>
-      <title>Spaceships and Aliens</title>
-      <link>https://emberlzhang.github.io/post/spaceships-aliens/</link>
-      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/post/spaceships-aliens/</guid>
-      <description>Description The Spaceships and Aliens Game is a game developed in JavaScript (Typescript).&#xA;Link: https://spaceships-aliens.vercel.app/&#xA;Code: https://github.com/emberlzhang/task_spaceships-aliens_twostep/&#xA;Purpose The Spaceships and Aliens game is an online behavioral task designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &amp;ldquo;two-stage&amp;rdquo; task paradigm in cognitive behavioral research.&#xA;Gameplay Overview The player plays rounds of two repeating choices followed in succession:</description>
-    </item>
-    <item>
       <title>Rose Garden Game</title>
       <link>https://emberlzhang.github.io/post/rose-garden/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://emberlzhang.github.io/post/rose-garden/</guid>
       <description>Description The Rose Garden Game is a game developed in React.JS and JavaScript.&#xA;Code: https://github.com/emberlzhang/task_rose-garden_two-step&#xA;Purpose The Rose Garden game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &amp;ldquo;two-stage&amp;rdquo; task paradigm in cognitive behavioral research.&#xA;Gameplay Overview The player plays rounds of two repeating choices followed in succession:</description>
+    </item>
+    <item>
+      <title>Spaceships and Aliens</title>
+      <link>https://emberlzhang.github.io/post/spaceships-aliens/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/post/spaceships-aliens/</guid>
+      <description>Description The Spaceships and Aliens Game is a game developed in JavaScript (Typescript).&#xA;Link: https://spaceships-aliens.vercel.app/&#xA;Code: https://github.com/emberlzhang/task_spaceships-aliens_twostep/&#xA;Purpose The Spaceships and Aliens game is an online behavioral task designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &amp;ldquo;two-stage&amp;rdquo; task paradigm in cognitive behavioral research.&#xA;Gameplay Overview The player plays rounds of two repeating choices followed in succession:</description>
     </item>
   </channel>
 </rss>

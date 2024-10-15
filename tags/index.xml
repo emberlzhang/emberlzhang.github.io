@@ -38,17 +38,17 @@
       <description></description>
     </item>
     <item>
-      <title>Typescript</title>
-      <link>https://emberlzhang.github.io/tags/typescript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>React.JS</title>
       <link>https://emberlzhang.github.io/tags/react.js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://emberlzhang.github.io/tags/react.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://emberlzhang.github.io/tags/typescript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/typescript/</guid>
       <description></description>
     </item>
   </channel>
