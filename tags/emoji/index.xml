@@ -11,9 +11,9 @@
     <atom:link href="https://emberlzhang.github.io/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>https://emberlzhang.github.io/post/sample_posts/emoji-support/</link>
+      <link>https://emberlzhang.github.io/sample_posts/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/post/sample_posts/emoji-support/</guid>
+      <guid>https://emberlzhang.github.io/sample_posts/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typescript on Code by Ember Zhang</title>
+    <link>https://emberlzhang.github.io/tags/typescript/</link>
+    <description>Recent content in Typescript on Code by Ember Zhang</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© 2024 Ember Zhang</copyright>
+    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://emberlzhang.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spaceships and Aliens</title>
+      <link>https://emberlzhang.github.io/post/spaceships-aliens/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/post/spaceships-aliens/</guid>
+      <description>Description The Spaceships and Aliens Game is a game developed in JavaScript (Typescript).&#xA;Link: https://spaceships-aliens.vercel.app/&#xA;Code: https://github.com/emberlzhang/task_spaceships-aliens_twostep/&#xA;Purpose The Spaceships and Aliens game is an online behavioral task designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &amp;ldquo;two-stage&amp;rdquo; task paradigm in cognitive behavioral research.&#xA;Gameplay Overview The player plays rounds of two repeating choices followed in succession:</description>
+    </item>
+  </channel>
+</rss>

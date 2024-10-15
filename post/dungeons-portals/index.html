@@ -60,6 +60,7 @@
   
   <meta name="description" content="Description The Dungeons &amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.
 Link: https://dungeons-and-portals.onrender.com/
+Code: https://github.com/emberlzhang/task_dungeon-portals-game/tree/main
 Purpose The Dungeons &amp; Portals Game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.
 Overview Objective: Throughout the game, the player to determine the best dungeon to enter, then tries to exit using the fewest number of teleportations through portals as possible." />
   <meta name="author" content="Ember Zhang" />
@@ -131,9 +132,9 @@ Overview Objective: Throughout the game, the player to determine the best dungeo
   
   <meta itemprop="name" content="Dungeons and Portals">
   <meta itemprop="description" content="Dungeons and portals game">
-  <meta itemprop="datePublished" content="2024-09-01T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-09-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="364">
+  <meta itemprop="datePublished" content="2024-09-30T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-30T00:00:00+00:00">
+  <meta itemprop="wordCount" content="592">
   <meta itemprop="keywords" content="JavaScript,Flask,Python">
   
   <meta property="og:url" content="https://emberlzhang.github.io/post/dungeons-portals/">
@@ -143,8 +144,8 @@ Overview Objective: Throughout the game, the player to determine the best dungeo
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2024-09-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-09-01T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-09-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-30T00:00:00+00:00">
     <meta property="article:tag" content="JavaScript">
     <meta property="article:tag" content="Flask">
     <meta property="article:tag" content="Python">
@@ -293,7 +294,7 @@ Overview Objective: Throughout the game, the player to determine the best dungeo
     
     <div class="text-xs antialiased opacity-60">
       
-      <time>Sep 1, 2024</time>
+      <time>Sep 30, 2024</time>
       
       
       
@@ -307,7 +308,8 @@ Overview Objective: Throughout the game, the player to determine the best dungeo
 
   <section><h3 id="description">Description</h3>
 <p>The Dungeons &amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.</p>
-<p>Link: <a href="https://dungeons-and-portals.onrender.com/">https://dungeons-and-portals.onrender.com/</a></p>
+<p><strong>Link:</strong> <a href="https://dungeons-and-portals.onrender.com/">https://dungeons-and-portals.onrender.com/</a></p>
+<p><strong>Code:</strong> <a href="https://github.com/emberlzhang/task_dungeon-portals-game/tree/main">https://github.com/emberlzhang/task_dungeon-portals-game/tree/main</a></p>
 <h3 id="purpose">Purpose</h3>
 <p>The Dungeons &amp; Portals Game was designed for the <a href="https://github.com/Center-for-Computational-Psychiatry/">Center for Computational Psychiatry</a> at <a href="https://icahn.mssm.edu/research/center-for-computational-psychiatry/team">Mount Sinai Hospital</a> to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.</p>
 <p><figure><img src="/dungeons_portals_screenshot1.png" width="600">
@@ -336,6 +338,24 @@ Throughout the game, the player to determine the best dungeon to enter, then tri
 <li>Once the player escapes the dungeon, they return to the Home Screen to make another choice.</li>
 </ul>
 <h3 id="features">Features</h3>
+<h4 id="real-time-animations">Real-Time Animations</h4>
+<p>An animation loop (60 ms refresh rate) was run to allow real-time animations. The player object was made to appear as a living and breathing character through repeated cycling of a set of sprite images at a certain pace based on the game&rsquo;s refresh rate.</p>
+<h4 id="player-movement-collision-management">Player Movement: Collision Management</h4>
+<p>The use of collision block objects allows for the player to navigate the entire platform game map without colliding into any visible walls or the ground.</p>
+<h4 id="teleportation-logic">Teleportation Logic</h4>
+<p>The player&rsquo;s ability to &ldquo;teleport&rdquo; through portals in the game was enabled using a suite of Python algorithms called at the beginning of each game session.</p>
+<ol>
+<li>
+<p>The <strong>portal_maker</strong> algorithm would randomly generate portal-to-portal connections in the form of a dictionary.</p>
+</li>
+<li>
+<p>The <strong>portal_solver</strong> algorithm would determine the shortest path (number of teleportations) to &ldquo;solve&rdquo; the portal map. The third and last algorithm allowed for</p>
+</li>
+<li>
+<p>The <strong>portal_picker</strong> algorithm would keep running portal_maker and portal_solver until finding a set of portals that met the criteria set by the game in terms of portal map solving difficulty. (For example, in one of our main game setups, we set the difficulty of the game dungeons to take a minimum of 3 steps-to-solve.)</p>
+</li>
+</ol>
+<p>These algorithms were called at the begining of the game to create a mapping a unique set of portal-to-portal connections for each of the two game dungeons per user session.</p>
 <h3 id="scientific-analysis">Scientific Analysis</h3>
 <p>The game tracks the player&rsquo;s ability to accurately model cost-benefit in complex-deterministic environments, and to make rational choices to maximize game rewards.</p>
 <p>Deviations from expected behavior may indicate an inability to correctly model cost-benefit of complex decisions. Correlation between irrational behavioral choices and behavioral compulsions may suggest that the inability to correctly model complex environments underlies behavioral compulsions in clinical populations.</p>
@@ -371,21 +391,6 @@ Throughout the game, the player to determine the best dungeon to enter, then tri
   
   
   
-  
-  <nav
-    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  >
-    
-    <a class="ltr:pr-3 rtl:pl-3" href="https://emberlzhang.github.io/post/rose-garden/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Rose Garden</span></a
-    >
-    
-    
-    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="https://emberlzhang.github.io/post/sample_posts/markdown-syntax/"
-      ><span>Markdown Syntax Guide</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
-    >
-    
-  </nav>
   
   
 
