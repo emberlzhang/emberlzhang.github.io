@@ -14,7 +14,7 @@
       <link>https://emberlzhang.github.io/post/dungeons-portals/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://emberlzhang.github.io/post/dungeons-portals/</guid>
-      <description>Description The Dungeons &amp;amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.&#xA;Link: https://dungeons-and-portals.onrender.com/&#xA;Purpose The Dungeons &amp;amp; Portals Game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.&#xA;Dungeons and Portals Screenshot 1 Dungeons and Portals Screenshot 2 Overview Objective: Throughout the game, the player to determine the best dungeon to enter, then tries to exit using the fewest number of teleportations through portals as possible.</description>
+      <description>Description The Dungeons &amp;amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.&#xA;Link: https://dungeons-and-portals.onrender.com/&#xA;Purpose The Dungeons &amp;amp; Portals Game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.&#xA;Overview Objective: Throughout the game, the player to determine the best dungeon to enter, then tries to exit using the fewest number of teleportations through portals as possible.</description>
     </item>
   </channel>
 </rss>
