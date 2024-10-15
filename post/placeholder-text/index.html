@@ -1,0 +1,389 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Dungeons and Portals - Code by Ember Zhang</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="Dungeons and Portals Screenshot 1 Dungeons and Portals Screenshot 2 Description The Dungeons &amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.
+Link: https://dungeons-and-portals.onrender.com/
+Purpose The Dungeons &amp; Portals Game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.
+Overview Objective: Throughout the game, the player to determine the best dungeon to enter, then tries to exit using the fewest number of teleportations through portals as possible." />
+  <meta name="author" content="Ember Zhang" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.127.0">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >Code by Ember Zhang</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >Contact</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/emberlzhang"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./linkedin.svg)"
+        href="https://linkedin.com/in/emberzhang"
+        target="_blank"
+        rel="me"
+      >
+        linkedin
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Dungeons and Portals</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Sep 1, 2024</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>Ember Zhang</span>
+      
+    </div>
+    
+  </header>
+
+  <section><p><figure><img src="/static/dungeons_portals_screenshot1.png" width="400"><figcaption>
+      <h4>Dungeons and Portals Screenshot 1</h4>
+    </figcaption>
+</figure>
+
+<figure><img src="/static/dungeons_portals_screenshot2.png" width="400"><figcaption>
+      <h4>Dungeons and Portals Screenshot 2</h4>
+    </figcaption>
+</figure>
+</p>
+<h3 id="description">Description</h3>
+<p>The Dungeons &amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.</p>
+<p>Link: <a href="https://dungeons-and-portals.onrender.com/">https://dungeons-and-portals.onrender.com/</a></p>
+<h3 id="purpose">Purpose</h3>
+<p>The Dungeons &amp; Portals Game was designed for the <a href="https://github.com/Center-for-Computational-Psychiatry/">Center for Computational Psychiatry</a> at <a href="https://icahn.mssm.edu/research/center-for-computational-psychiatry/team">Mount Sinai Hospital</a> to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.</p>
+<h3 id="overview">Overview</h3>
+<p><strong>Objective:</strong>
+Throughout the game, the player to determine the best dungeon to enter, then tries to exit using the fewest number of teleportations through portals as possible.</p>
+<p>The player is presented with two options in the game:</p>
+<ul>
+<li>Option A: High reward, high cost - always results in a net negative point balance.</li>
+<li>Option B: Moderate reward, no cost - always results in a net positive point balance.</li>
+</ul>
+<p><strong>Instructions and Practice Rounds:</strong> The player is guided through a set of written instructions on how to play the game. This is followed by a set of practice rounds to familiarize the player with the mechanics.</p>
+<h3 id="main-gameplay">Main Gameplay</h3>
+<p>The game begins on the Home Screen, where the player chooses to enter one of two dungeons.</p>
+<ul>
+<li>Unknown to the player, these dungeons correspond to Option A (high reward, high cost) and Option B (moderate reward, no cost).</li>
+<li>Upon entering a dungeon, the player earns a certain number of points.</li>
+<li>Each dungeon contains portals, with the goal of finding a way to the &ldquo;escape&rdquo; door.</li>
+<li>The player navigates through these portals, which teleport them to different sections of the dungeon, until they reach the escape door.</li>
+<li>Depending on whether the dungeon represents Option A or B, the portals may cause the player to lose points.</li>
+<li>Once the player escapes the dungeon, they return to the Home Screen to make another choice.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h3 id="scientific-analysis">Scientific Analysis</h3>
+<p>The game tracks the player&rsquo;s ability to accurately model cost-benefit in complex-deterministic environments, and to make rational choices to maximize game rewards.</p>
+<p>Deviations from expected behavior may indicate an inability to correctly model cost-benefit of complex decisions. Correlation between irrational behavioral choices and behavioral compulsions may suggest that the inability to correctly model complex environments underlies behavioral compulsions in clinical populations.</p>
+<p>Player behavior and preferences are mapped to Bayesian inference models to discern group-level differences between HC populations and clinical behavioral compulsion groups.</p>
+
+</section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/javascript"
+      >JavaScript</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/flask"
+      >Flask</a
+    >
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/python"
+      >Python</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="http://localhost:1313/post/markdown-syntax/"
+      ><span>Markdown Syntax Guide</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    © 2024 Ember Zhang
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Code by Ember Zhang</title>
+    <link>https://emberlzhang.github.io/tags/</link>
+    <description>Recent content in Tags on Code by Ember Zhang</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© 2024 Ember Zhang</copyright>
+    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://emberlzhang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Index</title>
+      <link>https://emberlzhang.github.io/tags/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>https://emberlzhang.github.io/tags/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React</title>
+      <link>https://emberlzhang.github.io/tags/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/react/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flask</title>
+      <link>https://emberlzhang.github.io/tags/flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/flask/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://emberlzhang.github.io/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://emberlzhang.github.io/tags/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://emberlzhang.github.io/tags/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>https://emberlzhang.github.io/tags/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>https://emberlzhang.github.io/tags/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/privacy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shortcodes</title>
+      <link>https://emberlzhang.github.io/tags/shortcodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emoji</title>
+      <link>https://emberlzhang.github.io/tags/emoji/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/tags/emoji/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
