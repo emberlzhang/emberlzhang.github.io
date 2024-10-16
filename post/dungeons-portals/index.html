@@ -59,10 +59,10 @@
   
   
   <meta name="description" content="Description The Dungeons &amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.
-Link: https://dungeons-and-portals.onrender.com/
-Code: https://github.com/emberlzhang/task_dungeon-portals-game/tree/main
+Link: https://dungeons-and-portals.onrender.com
+Code: https://github.com/emberlzhang/task_dungeon-portals-game
 Purpose The Dungeons &amp; Portals Game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.
-Overview Objective: Throughout the game, the player to determine the best dungeon to enter, then tries to exit using the fewest number of teleportations through portals as possible." />
+Overview Each round of the game, the player chooses a dungeon to enter, then tries to escape the dungeon using the fewest number of portal teleportations possible." />
   <meta name="author" content="Ember Zhang" />
   
 
@@ -134,7 +134,7 @@ Overview Objective: Throughout the game, the player to determine the best dungeo
   <meta itemprop="description" content="Dungeons and portals game">
   <meta itemprop="datePublished" content="2024-09-30T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-09-30T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1336">
+  <meta itemprop="wordCount" content="1282">
   <meta itemprop="keywords" content="JavaScript,Flask,Python">
   
   <meta property="og:url" content="https://emberlzhang.github.io/post/dungeons-portals/">
@@ -308,8 +308,8 @@ Overview Objective: Throughout the game, the player to determine the best dungeo
 
   <section><h3 id="description">Description</h3>
 <p>The Dungeons &amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.</p>
-<p><strong>Link:</strong> <a href="https://dungeons-and-portals.onrender.com/">https://dungeons-and-portals.onrender.com/</a></p>
-<p><strong>Code:</strong> <a href="https://github.com/emberlzhang/task_dungeon-portals-game/tree/main">https://github.com/emberlzhang/task_dungeon-portals-game/tree/main</a></p>
+<p><strong>Link:</strong> <a href="https://dungeons-and-portals.onrender.com">https://dungeons-and-portals.onrender.com</a></p>
+<p><strong>Code:</strong> <a href="https://github.com/emberlzhang/task_dungeon-portals-game">https://github.com/emberlzhang/task_dungeon-portals-game</a></p>
 <h3 id="purpose">Purpose</h3>
 <p>The Dungeons &amp; Portals Game was designed for the <a href="https://github.com/Center-for-Computational-Psychiatry/">Center for Computational Psychiatry</a> at <a href="https://icahn.mssm.edu/research/center-for-computational-psychiatry/team">Mount Sinai Hospital</a> to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.</p>
 <p><figure><img src="/dungeons_portals_screenshot1.png" width="600">
@@ -319,28 +319,38 @@ Overview Objective: Throughout the game, the player to determine the best dungeo
 </figure>
 </p>
 <h3 id="overview">Overview</h3>
-<p><strong>Objective:</strong>
-Throughout the game, the player to determine the best dungeon to enter, then tries to exit using the fewest number of teleportations through portals as possible.</p>
-<p>The player is presented with two options in the game:</p>
+<p>Each round of the game, the player chooses a dungeon to enter, then tries to escape the dungeon using the fewest number of portal teleportations possible.</p>
+<!-- raw HTML omitted -->
+<h3 id="gameplay-mechanics">Gameplay Mechanics</h3>
+<ol>
+<li>
+<p>The game begins on the Home Screen, where the player chooses to enter one of two dungeons.</p>
+</li>
+<li>
+<p>Unknown to the player, the two dungeons operate on the following underlying logic:</p>
 <ul>
 <li>Option A: High reward, high cost - always results in a net negative point balance.</li>
 <li>Option B: Moderate reward, no cost - always results in a net positive point balance.</li>
 </ul>
-<p><strong>Instructions and Practice Rounds:</strong> The player is guided through a set of written instructions on how to play the game. This is followed by a set of practice rounds to familiarize the player with the mechanics.</p>
-<h3 id="main-gameplay">Main Gameplay</h3>
-<p>The game begins on the Home Screen, where the player chooses to enter one of two dungeons.</p>
+</li>
+<li>
+<p>Upon entering a dungeon, the player earns a certain number of points.</p>
+</li>
+<li>
+<p>Each dungeon contains portals, with the goal of finding a way to the &ldquo;escape&rdquo; door.</p>
 <ul>
-<li>Unknown to the player, these dungeons correspond to Option A (high reward, high cost) and Option B (moderate reward, no cost).</li>
-<li>Upon entering a dungeon, the player earns a certain number of points.</li>
-<li>Each dungeon contains portals, with the goal of finding a way to the &ldquo;escape&rdquo; door.</li>
 <li>The player navigates through these portals, which teleport them to different sections of the dungeon, until they reach the escape door.</li>
 <li>Depending on whether the dungeon represents Option A or B, the portals may cause the player to lose points.</li>
-<li>Once the player escapes the dungeon, they return to the Home Screen to make another choice.</li>
 </ul>
+</li>
+<li>
+<p>Once the player escapes the dungeon, they return to the Home Screen to make another choice.</p>
+</li>
+</ol>
 <h3 id="features">Features</h3>
 <h4 id="real-time-animations">Real-Time Animations</h4>
-<p>An animation loop (60 ms refresh rate) was run to allow real-time animations. The player object was made to appear as a living and breathing character through repeated cycling of a set of sprite images at a certain pace based on the game&rsquo;s refresh rate.</p>
-<p>Below is just one of the functions to illustrate:</p>
+<p>An animation loop (60 ms frame rate) is run to allow real-time animations. The Player object is made to appear as a living and moving character through a set of sprite images set to repeatedly cycle at a certain refresh rate based on the game frame rate.</p>
+<p>Below is one such function to illustrate:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">updateFrames</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">autoplay</span>) <span style="color:#66d9ef">return</span>
 </span></span><span style="display:flex;"><span>
@@ -363,7 +373,7 @@ Throughout the game, the player to determine the best dungeon to enter, then tri
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h4 id="player-movement-collision-management">Player Movement: Collision Management</h4>
+</span></span></code></pre></div><h4 id="collision-management">Collision Management</h4>
 <p>The use of &ldquo;collision block&rdquo; objects allows for the player to navigate the entire platform game map without colliding into any visible walls or the ground.</p>
 <p>For instance, the game&rsquo;s Map object would represent information about each dungeon in the game and denote the borders through a set of collision blocks:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Map</span> {
@@ -386,10 +396,8 @@ Throughout the game, the player to determine the best dungeon to enter, then tri
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">collisionBlocks</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dungeonCollisions</span>.<span style="color:#a6e22e">parse2D</span>().<span style="color:#a6e22e">createObjectsFrom2D</span>();
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// other Map code...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
 </span></span></code></pre></div><p>At each frame refresh of the game, functions like <strong>checkHorizontalCollisions</strong> (shown here) and <strong>checkVerticalCollisions</strong> would run to ensure the player&rsquo;s position was not colliding with the pre-set collision blocks made by the Map object (as shown above).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">checkHorizontalCollisions</span>(<span style="color:#a6e22e">collisionBlocks</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">collisionBlocks</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
@@ -418,97 +426,98 @@ Throughout the game, the player to determine the best dungeon to enter, then tri
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h4 id="teleportation-logic">Teleportation Logic</h4>
-<p>The player&rsquo;s ability to &ldquo;teleport&rdquo; through portals in the game was enabled using a suite of Python algorithms called at the beginning of each game session.</p>
+<p>The player&rsquo;s ability to &ldquo;teleport&rdquo; through portals in the game was enabled using Python algorithms fetched at the beginning of the game session.</p>
 <ol>
-<li>The <strong>portal_generator</strong> algorithm would randomly generate portal-to-portal connections in the form of a dictionary.</li>
+<li>The <strong>portal_generator</strong> algorithm randomly generates portal-to-portal connections in the form of integer key-value pairs.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">def</span> <span style="color:#a6e22e">portal_generator</span>(<span style="color:#a6e22e">self</span>)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_doors</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;Number of doors needs to be even.&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">this</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">because</span> <span style="color:#a6e22e">every</span> <span style="color:#a6e22e">door</span> <span style="color:#a6e22e">needs</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">connecting</span> <span style="color:#a6e22e">door</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">portal_generator</span>(self):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>n_doors <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;Number of doors needs to be even.&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># this is because every door needs a connecting door</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doors</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(<span style="color:#a6e22e">range</span>(<span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_doors</span>)) <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">make</span> <span style="color:#a6e22e">array</span> <span style="color:#a6e22e">list</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">size</span> <span style="color:#a6e22e">n_doors</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doors</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">doors</span>] <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">add</span> <span style="color:#ae81ff">1</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">each</span> <span style="color:#a6e22e">array</span> <span style="color:#a6e22e">item</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">account</span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">index</span> <span style="color:#a6e22e">zero</span> 
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">portal_connections</span> <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    doors <span style="color:#f92672">=</span> list(range(self<span style="color:#f92672">.</span>n_doors)) <span style="color:#75715e"># make array list of size n_doors</span>
+</span></span><span style="display:flex;"><span>    doors <span style="color:#f92672">=</span> [i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> doors] <span style="color:#75715e"># add 1 to each array item to account for index zero </span>
+</span></span><span style="display:flex;"><span>    portal_connections <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">connection</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">range</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">n_connections</span>)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#a6e22e">len</span>(<span style="color:#a6e22e">doors</span>) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">random</span>.<span style="color:#a6e22e">shuffle</span>(<span style="color:#a6e22e">doors</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">point_a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors</span>[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doors</span>.<span style="color:#a6e22e">remove</span>(<span style="color:#a6e22e">point_a</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">point_b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors</span>[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doors</span>.<span style="color:#a6e22e">remove</span>(<span style="color:#a6e22e">point_b</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">portal_connections</span>[<span style="color:#a6e22e">point_a</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">point_b</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">portal_connections</span>[<span style="color:#a6e22e">point_b</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">point_a</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># for connection in range(1, n_connections):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> len(doors) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        random<span style="color:#f92672">.</span>shuffle(doors)
+</span></span><span style="display:flex;"><span>        point_a <span style="color:#f92672">=</span> doors[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        doors<span style="color:#f92672">.</span>remove(point_a)
+</span></span><span style="display:flex;"><span>        point_b <span style="color:#f92672">=</span> doors[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        doors<span style="color:#f92672">.</span>remove(point_b)
+</span></span><span style="display:flex;"><span>        portal_connections[point_a] <span style="color:#f92672">=</span> point_b
+</span></span><span style="display:flex;"><span>        portal_connections[point_b] <span style="color:#f92672">=</span> point_a
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">floors_n_doors</span> <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">n_doorsperfloor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">math</span>.<span style="color:#a6e22e">ceil</span>(<span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_doors</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_floors</span>) <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">round</span> <span style="color:#a6e22e">up</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">nearest</span> <span style="color:#a6e22e">integer</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">assign</span> <span style="color:#a6e22e">doors</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">each</span> <span style="color:#a6e22e">floor</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doors_list</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(<span style="color:#a6e22e">range</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_doors</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">floor</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">range</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_floors</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#ae81ff">1</span> <span style="color:#a6e22e">thru</span> <span style="color:#ae81ff">4</span> <span style="color:#a6e22e">floors</span> <span style="color:#a6e22e">floorsndoors</span>[<span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">range</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doors</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors_list</span>[<span style="color:#f92672">:</span><span style="color:#a6e22e">n_doorsperfloor</span>] 
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">floors_n_doors</span>[<span style="color:#a6e22e">floor</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">assign</span> <span style="color:#a6e22e">doors</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">floor</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doors_list</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors_list</span>[<span style="color:#a6e22e">n_doorsperfloor</span><span style="color:#f92672">:</span>] <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">remove</span> <span style="color:#a6e22e">doors</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">that</span> <span style="color:#a6e22e">floor</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">doors_list</span>
+</span></span><span style="display:flex;"><span>    floors_n_doors <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    n_doorsperfloor <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>ceil(self<span style="color:#f92672">.</span>n_doors <span style="color:#f92672">/</span> self<span style="color:#f92672">.</span>n_floors) <span style="color:#75715e"># round up to nearest integer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># assign doors to each floor</span>
+</span></span><span style="display:flex;"><span>    doors_list <span style="color:#f92672">=</span> list(range(<span style="color:#ae81ff">1</span>, self<span style="color:#f92672">.</span>n_doors<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> floor <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, self<span style="color:#f92672">.</span>n_floors<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>): <span style="color:#75715e"># 1 thru 4 floors floorsndoors[4] = range 3*3+1, 10</span>
+</span></span><span style="display:flex;"><span>        doors <span style="color:#f92672">=</span> doors_list[:n_doorsperfloor] 
+</span></span><span style="display:flex;"><span>        floors_n_doors[floor] <span style="color:#f92672">=</span> doors <span style="color:#75715e"># assign doors to floor</span>
+</span></span><span style="display:flex;"><span>        doors_list <span style="color:#f92672">=</span> doors_list[n_doorsperfloor:] <span style="color:#75715e"># remove doors of that floor from doors_list</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assignments</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">portal_connections</span>, <span style="color:#a6e22e">floors_n_doors</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">assignments</span>
+</span></span><span style="display:flex;"><span>    assignments <span style="color:#f92672">=</span> [portal_connections, floors_n_doors]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> assignments
 </span></span></code></pre></div><ol start="2">
-<li>The <strong>portal_solver</strong> algorithm would determine the shortest path (number of teleportations) to &ldquo;solve&rdquo; the portal map.</li>
+<li>The <strong>portal_solver</strong> algorithm determines the shortest path (number of teleportations) to &ldquo;solve&rdquo; the portal map.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">def</span> <span style="color:#a6e22e">portal_generator</span>(<span style="color:#a6e22e">self</span>)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_doors</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;Number of doors needs to be even.&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">this</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">because</span> <span style="color:#a6e22e">every</span> <span style="color:#a6e22e">door</span> <span style="color:#a6e22e">needs</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">connecting</span> <span style="color:#a6e22e">door</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">portal_generator</span>(self):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>n_doors <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;Number of doors needs to be even.&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># this is because every door needs a connecting door</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doors</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(<span style="color:#a6e22e">range</span>(<span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_doors</span>)) <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">make</span> <span style="color:#a6e22e">array</span> <span style="color:#a6e22e">list</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">size</span> <span style="color:#a6e22e">n_doors</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doors</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">doors</span>] <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">add</span> <span style="color:#ae81ff">1</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">each</span> <span style="color:#a6e22e">array</span> <span style="color:#a6e22e">item</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">account</span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">index</span> <span style="color:#a6e22e">zero</span> 
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">portal_connections</span> <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    doors <span style="color:#f92672">=</span> list(range(self<span style="color:#f92672">.</span>n_doors)) <span style="color:#75715e"># make array list of size n_doors</span>
+</span></span><span style="display:flex;"><span>    doors <span style="color:#f92672">=</span> [i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> doors] <span style="color:#75715e"># add 1 to each array item to account for index zero </span>
+</span></span><span style="display:flex;"><span>    portal_connections <span style="color:#f92672">=</span> {}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">connection</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">range</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">n_connections</span>)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#a6e22e">len</span>(<span style="color:#a6e22e">doors</span>) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">random</span>.<span style="color:#a6e22e">shuffle</span>(<span style="color:#a6e22e">doors</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">point_a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors</span>[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doors</span>.<span style="color:#a6e22e">remove</span>(<span style="color:#a6e22e">point_a</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">point_b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors</span>[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doors</span>.<span style="color:#a6e22e">remove</span>(<span style="color:#a6e22e">point_b</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">portal_connections</span>[<span style="color:#a6e22e">point_a</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">point_b</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">portal_connections</span>[<span style="color:#a6e22e">point_b</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">point_a</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># for connection in range(1, n_connections):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> len(doors) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        random<span style="color:#f92672">.</span>shuffle(doors)
+</span></span><span style="display:flex;"><span>        point_a <span style="color:#f92672">=</span> doors[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        doors<span style="color:#f92672">.</span>remove(point_a)
+</span></span><span style="display:flex;"><span>        point_b <span style="color:#f92672">=</span> doors[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        doors<span style="color:#f92672">.</span>remove(point_b)
+</span></span><span style="display:flex;"><span>        portal_connections[point_a] <span style="color:#f92672">=</span> point_b
+</span></span><span style="display:flex;"><span>        portal_connections[point_b] <span style="color:#f92672">=</span> point_a
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">floors_n_doors</span> <span style="color:#f92672">=</span> {}
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">n_doorsperfloor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">math</span>.<span style="color:#a6e22e">ceil</span>(<span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_doors</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_floors</span>) <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">round</span> <span style="color:#a6e22e">up</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">nearest</span> <span style="color:#a6e22e">integer</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">assign</span> <span style="color:#a6e22e">doors</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">each</span> <span style="color:#a6e22e">floor</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">doors_list</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(<span style="color:#a6e22e">range</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_doors</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">floor</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">range</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">n_floors</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#ae81ff">1</span> <span style="color:#a6e22e">thru</span> <span style="color:#ae81ff">4</span> <span style="color:#a6e22e">floors</span> <span style="color:#a6e22e">floorsndoors</span>[<span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">range</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doors</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors_list</span>[<span style="color:#f92672">:</span><span style="color:#a6e22e">n_doorsperfloor</span>] 
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">floors_n_doors</span>[<span style="color:#a6e22e">floor</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">assign</span> <span style="color:#a6e22e">doors</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">floor</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">doors_list</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doors_list</span>[<span style="color:#a6e22e">n_doorsperfloor</span><span style="color:#f92672">:</span>] <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">remove</span> <span style="color:#a6e22e">doors</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">that</span> <span style="color:#a6e22e">floor</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">doors_list</span>
+</span></span><span style="display:flex;"><span>    floors_n_doors <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    n_doorsperfloor <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>ceil(self<span style="color:#f92672">.</span>n_doors <span style="color:#f92672">/</span> self<span style="color:#f92672">.</span>n_floors) <span style="color:#75715e"># round up to nearest integer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># assign doors to each floor</span>
+</span></span><span style="display:flex;"><span>    doors_list <span style="color:#f92672">=</span> list(range(<span style="color:#ae81ff">1</span>, self<span style="color:#f92672">.</span>n_doors<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> floor <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, self<span style="color:#f92672">.</span>n_floors<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>): <span style="color:#75715e"># 1 thru 4 floors floorsndoors[4] = range 3*3+1, 10</span>
+</span></span><span style="display:flex;"><span>        doors <span style="color:#f92672">=</span> doors_list[:n_doorsperfloor] 
+</span></span><span style="display:flex;"><span>        floors_n_doors[floor] <span style="color:#f92672">=</span> doors <span style="color:#75715e"># assign doors to floor</span>
+</span></span><span style="display:flex;"><span>        doors_list <span style="color:#f92672">=</span> doors_list[n_doorsperfloor:] <span style="color:#75715e"># remove doors of that floor from doors_list</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assignments</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">portal_connections</span>, <span style="color:#a6e22e">floors_n_doors</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">assignments</span>
+</span></span><span style="display:flex;"><span>    assignments <span style="color:#f92672">=</span> [portal_connections, floors_n_doors]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> assignments
 </span></span></code></pre></div><ol start="3">
-<li>The <strong>portal_picker</strong> algorithm would keep running portal_maker and portal_solver until finding a set of portals that met the criteria set by the game in terms of portal map solving difficulty. (For example, in one of our main game setups, we set the difficulty of the game dungeons to take a minimum of 3 steps-to-solve.)</li>
+<li>The <strong>portal_picker</strong> algorithm keeps running portal_maker and portal_solver until finding a set of portals that met the criteria set by the game in terms of portal map solving difficulty. (For example, in one of our main game setups, we set the difficulty of the game dungeons to take a minimum of 3 steps-to-solve.)</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">def</span> <span style="color:#a6e22e">portal_picker</span>(<span style="color:#a6e22e">self</span>)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">steps</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">reps</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">portal_picker</span>(self):
+</span></span><span style="display:flex;"><span>    steps <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    reps <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#a6e22e">steps</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">steps_to_solve</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reps</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">assignments</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">portal_generator</span>() <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">generate</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">set</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">portal</span> <span style="color:#a6e22e">connections</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">portal_connections</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">assignments</span>[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">floors_n_doors</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">assignments</span>[<span style="color:#ae81ff">1</span>]
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">steps</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">portal_solver</span>(<span style="color:#a6e22e">portal_connections</span>, <span style="color:#a6e22e">floors_n_doors</span>) <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">solve</span> <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">this</span> <span style="color:#a6e22e">set</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">portal</span> <span style="color:#a6e22e">connections</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> steps <span style="color:#f92672">!=</span> self<span style="color:#f92672">.</span>steps_to_solve:
+</span></span><span style="display:flex;"><span>        reps <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        assignments <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>portal_generator() <span style="color:#75715e"># generate new set of portal connections</span>
+</span></span><span style="display:flex;"><span>        portal_connections <span style="color:#f92672">=</span> assignments[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        floors_n_doors <span style="color:#f92672">=</span> assignments[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>        steps <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>portal_solver(portal_connections, floors_n_doors) <span style="color:#75715e"># solve for this set of portal connections</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">steps</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">steps_to_solve</span><span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">it</span> <span style="color:#a6e22e">matches</span>, <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span> <span style="color:#a6e22e">set</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">portal</span> <span style="color:#a6e22e">connections</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> steps <span style="color:#f92672">==</span> self<span style="color:#f92672">.</span>steps_to_solve: <span style="color:#75715e"># if it matches, return this set of portal connections</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">reps</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;More than 100 failed attempts to find portal connections. Try different portal parameters.&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> reps <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">100</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">Exception</span>(<span style="color:#e6db74">&#34;More than 100 failed attempts to find portal connections. Try different portal parameters.&#34;</span>)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Portal set found!&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Steps to solve: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">str</span>(<span style="color:#a6e22e">steps</span>))
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">portal_connections</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">portal_connections</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">portal_connections</span>
-</span></span></code></pre></div><p>These algorithms were called at the begining of the game to create a mapping a unique set of portal-to-portal connections for each of the two game dungeons per user session.</p>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># print(&#34;Portal set found!&#34;)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># print(&#34;Steps to solve: &#34; + str(steps))</span>
+</span></span><span style="display:flex;"><span>    self<span style="color:#f92672">.</span>portal_connections <span style="color:#f92672">=</span> portal_connections
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> portal_connections
+</span></span></code></pre></div><p>These algorithms return a dictionary mapping two unique sets of portal-to-portal connections for the creation of two dungeons for each user / game session.</p>
+<p>These algorithms also ensure a consistent level of game difficulty across different user sessions.</p>
 <h3 id="scientific-analysis">Scientific Analysis</h3>
 <p>The game tracks the player&rsquo;s ability to accurately model cost-benefit in complex-deterministic environments, and to make rational choices to maximize game rewards.</p>
 <p>Deviations from expected behavior may indicate an inability to correctly model cost-benefit of complex decisions. Correlation between irrational behavioral choices and behavioral compulsions may suggest that the inability to correctly model complex environments underlies behavioral compulsions in clinical populations.</p>

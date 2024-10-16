@@ -61,7 +61,7 @@
   <meta name="description" content="Description The Rose Garden Game is a game developed in React.JS and JavaScript.
 Code: https://github.com/emberlzhang/task_rose-garden_two-step
 Purpose The Rose Garden game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &ldquo;two-stage&rdquo; task paradigm in cognitive behavioral research.
-Gameplay Overview The player plays rounds of two repeating choices followed in succession:" />
+Gameplay The player plays rounds of two repeating choices followed in succession:" />
   <meta name="author" content="Ember Zhang" />
   
 
@@ -133,7 +133,7 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
   <meta itemprop="description" content="Rose Garden Game">
   <meta itemprop="datePublished" content="2024-09-15T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-09-15T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1212">
+  <meta itemprop="wordCount" content="1345">
   <meta itemprop="keywords" content="JavaScript,React.JS">
   
   <meta property="og:url" content="https://emberlzhang.github.io/post/rose-garden/">
@@ -310,7 +310,7 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
 <p><strong>Code:</strong> <a href="https://github.com/emberlzhang/task_rose-garden_two-step">https://github.com/emberlzhang/task_rose-garden_two-step</a></p>
 <h3 id="purpose">Purpose</h3>
 <p>The Rose Garden game was designed for the <a href="https://github.com/Center-for-Computational-Psychiatry/">Center for Computational Psychiatry</a> at <a href="https://icahn.mssm.edu/research/center-for-computational-psychiatry/team">Mount Sinai Hospital</a> to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &ldquo;two-stage&rdquo; task paradigm in cognitive behavioral research.</p>
-<h3 id="gameplay-overview">Gameplay Overview</h3>
+<h3 id="gameplay">Gameplay</h3>
 <p>The player plays rounds of two repeating choices followed in succession:</p>
 <p><strong>Choice 1: Pick a gardening store.</strong>
 <figure><img src="/rose_garden_screenshot1.png" width="600">
@@ -324,12 +324,15 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
 <figure><img src="/rose_garden_screenshot3.png" width="600">
 </figure>
 
-<h3 id="features">Features</h3>
-<h4 id="probabalistic-game-logic">Probabalistic Game Logic</h4>
-<p>The choice of gardening store in Stage 1 and gardener in Stage 2 map probabalistically to picking red roses or yellow roses.</p>
+<p>There are two gardening stores, and two pairs of gardeners in the game.</p>
 <p>Over time, the player may come to notice, and make a preference for choosing flowers of all the same color, or choosing flowers of both colors, or some other such preference. This preference is of interest for researchers studying behavior compulsions, as it measures task perseverance.</p>
+<h3 id="features">Features</h3>
+<h4 id="probabilistic-game-logic">Probabilistic Game Logic</h4>
+<p>The choice of gardening store in Stage 1 and gardener in Stage 2 map probabilistically to picking red roses or yellow roses.</p>
+<p>For example, in Stage 1, choosing a gardening store influences the selection of gardeners in Stage 2 based on probabilities. For instance, selecting a particular gardening store might give an 80% chance of being matched with one pair of gardeners and a 20% chance of being matched with a different pair.</p>
+<p>Likewise, in Stage 2, the gardener chosen also influences the type of roses planted, again with probabilities. For example, selecting the gardener on the left side might result in an 80% chance of planting a red rose and a 20% chance of planting a yellow rose. Conversely, choosing the right-side gardener might give a 20% chance of planting a yellow rose and an 80% chance of planting a red rose.</p>
 <h4 id="vector-based-rose-garden">Vector Based Rose Garden</h4>
-<p>A 2D array object was used to store the coordinates of roses within the rectangular garden, so that distinct &ldquo;shapes&rdquo; would appear, prompting the user to either explore further development of the shape with the same color rose, or explore alternatives using the other rose color.</p>
+<p>A 2D array object is used to store the coordinates of roses within the rectangular garden, so that distinct &ldquo;shapes&rdquo; would appear, prompting the user to either explore further development of the shape with the same color rose, or explore alternatives using the other rose color.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// COLOR ASSIGNMENTS
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 1 = red rose 
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 2 = yellow rose
