@@ -58,7 +58,7 @@
   
   
   
-  <meta name="description" content="Description The Spaceships and Aliens Game is a game developed in JavaScript (Typescript).
+  <meta name="description" content="Description The Spaceships and Aliens Game is a game developed in JavaScript (TypeScript).
 Link: https://spaceships-aliens.vercel.app
 Code: https://github.com/emberlzhang/task_spaceships-aliens_twostep
 Purpose The Spaceships and Aliens game is an online behavioral task designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &ldquo;two-stage&rdquo; task paradigm in cognitive behavioral research.
@@ -134,8 +134,8 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
   <meta itemprop="description" content="Spaceships and Aliens">
   <meta itemprop="datePublished" content="2024-09-01T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-09-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="349">
-  <meta itemprop="keywords" content="JavaScript,Typescript">
+  <meta itemprop="wordCount" content="461">
+  <meta itemprop="keywords" content="JavaScript,TypeScript">
   
   <meta property="og:url" content="https://emberlzhang.github.io/post/spaceships-aliens/">
   <meta property="og:site_name" content="Code by Ember Zhang">
@@ -147,7 +147,7 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
     <meta property="article:published_time" content="2024-09-01T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-09-01T00:00:00+00:00">
     <meta property="article:tag" content="JavaScript">
-    <meta property="article:tag" content="Typescript">
+    <meta property="article:tag" content="TypeScript">
 
   
   
@@ -306,7 +306,7 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
   </header>
 
   <section><h3 id="description">Description</h3>
-<p>The Spaceships and Aliens Game is a game developed in JavaScript (Typescript).</p>
+<p>The Spaceships and Aliens Game is a game developed in JavaScript (TypeScript).</p>
 <p><strong>Link:</strong> <a href="https://task-twostep-git-master-emberlzhangs-projects.vercel.app">https://spaceships-aliens.vercel.app</a></p>
 <p><strong>Code:</strong> <a href="https://github.com/emberlzhang/task_spaceships-aliens_twostep">https://github.com/emberlzhang/task_spaceships-aliens_twostep</a></p>
 <h3 id="purpose">Purpose</h3>
@@ -334,7 +334,12 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
 
 <p>Over time, the player may notice certain combinations of rocketship / alien trader choices yield more favorable outcomes, and will thus select those choices.</p>
 <p><strong>Changing Probabilities Over Time</strong></p>
-<p>Over the course of the game, the gem probabilities associated with the aliens will fluctuate across trials for each of the four aliens, thus yielding different combinations for a favorable outcome. The user is encouraged to adapt, but not all users do. This ability (or lack thereof) to adapt to changing circumstances in the game over time is of great research interest, particularly with regard to compulsive behavior disorders.</p>
+<p>Over the course of the game, the gem probabilities associated with the aliens will fluctuate across trials for each of the four aliens, thus yielding different combinations for a favorable outcome. The user is encouraged to adapt, but not all users do.</p>
+<p>This ability (or lack thereof) to adapt to changing circumstances in the game over time is of great research interest, particularly with regard to compulsive behavior disorders.</p>
+<h4 id="automatic-local-data-download">Automatic, Local Data Download</h4>
+<p>For the purposes of satisfying this application&rsquo;s main use case, rather than saving user data to a standard relational database such as MySQL or PostgresQL, the application saves the game locally to the user&rsquo;s computer.</p>
+<p>This feature was developed for a specific research use case (e.g. research assistants prompting participants to play the game during on-site research sessions conducted in locations with limited internet access, such as an underground fMRI scanner room).</p>
+<p>The data automatically saves when the program is closed or the tab/window is exited, regardless of whether the task is completed. This ensures that data is preserved during interrupted user sessions as well as during testing.</p>
 <h3 id="significance-to-scientific-end-user">Significance to Scientific End User</h3>
 <p>The game tracks the player&rsquo;s preference towards task perseveration vs. context switching, with the expectation of higher task perseveration for compulsive behavior populations relative to healthy control populations.</p>
 <p>Player behavior and preferences are mapped to Bayesian inference models to discern group-level differences between HC populations and clinical behavioral compulsion groups.</p>
@@ -354,7 +359,7 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
     <a
       class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
       href="https://emberlzhang.github.io/tags/typescript"
-      >Typescript</a
+      >TypeScript</a
     >
     
   </footer>
