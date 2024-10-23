@@ -14,7 +14,7 @@
       <link>https://emberlzhang.github.io/about/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://emberlzhang.github.io/about/</guid>
-      <description>Hello there. I’m Ember Zhang (she/they), a software developer based in New York City. I work across the full stack and specialize in Python, Ruby on Rails, and JavaScript / React.JS.&#xA;I enjoy learning &amp;amp; personal development, delving deep into science and history books, powerlifting, short-track speedskating, travel, playing the Chinese guqin, and spending time with my partner in the city.</description>
+      <description>Hello there. I’m Ember Zhang (she/they), a software developer based in New York City. I work across the full stack and have experience working in Python, Ruby on Rails, JavaScript (TypeScript), React.JS, and Node.JS.&#xA;Backstory: I have 4 years of experience working as a software developer in startups, corporate, and academic research environments. Alongside my full-time work, I am currently pursuing a Master&amp;rsquo;s in Computer Science at the University of Pennsylvania.</description>
     </item>
     <item>
       <title>Contact</title>
@@ -43,6 +43,27 @@
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://emberlzhang.github.io/post/spaceships-aliens/</guid>
       <description>Description The Spaceships and Aliens Game is a game developed in JavaScript (TypeScript).&#xA;Link: https://spaceships-aliens.vercel.app&#xA;Code: https://github.com/emberlzhang/task_spaceships-aliens_twostep&#xA;Purpose The Spaceships and Aliens game is an online behavioral task designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &amp;ldquo;two-stage&amp;rdquo; task paradigm in cognitive behavioral research.&#xA;Gameplay Overview The player plays rounds of two repeating choices followed in succession:</description>
+    </item>
+    <item>
+      <title>Yale Fish Task Development &amp; API Integration</title>
+      <link>https://emberlzhang.github.io/post/yale-fish-task/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/post/yale-fish-task/</guid>
+      <description>Description The Fishing Task is a game developed in JavaScript and Node.JS, and modelled upon an original version in PsychoJS. Additionally, API integrations with external services were done using AWS Lamdba.&#xA;Code: Purpose The Fishing Task is an online behavioral task developed for the Powers Lab at Yale Medical School to use on clinical and healthy populations during clinical studies on ketamine, a psychoactive used for pain relief, anxiety and mood disorders.</description>
+    </item>
+    <item>
+      <title>Slot Machine</title>
+      <link>https://emberlzhang.github.io/post/slot-machine-misophonia/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/post/slot-machine-misophonia/</guid>
+      <description>Description The Slot Machine is a game developed in JavaScript and Phaser.JS.&#xA;Code: https://github.com/Center-for-Computational-Psychiatry/task_slot-machine-misophonia&#xA;Purpose The Slot Machine game is a behavioral task designed for the Center for Computational Psychiatry at Mount Sinai Hospital. The game represents a widely used task paradigm (e.g. the &amp;ldquo;three-armed bandit&amp;rdquo; task) in cognitive behavioral research. It is typically used to track learning behavior for various clinical populations and healthy populations.&#xA;In this case, it was used to track learning behaviors of patients with misophonia (a disorder characterized by strong distaste for everyday sounds e.</description>
+    </item>
+    <item>
+      <title>Color Shape Task (Desrochers Lab - Brown University)</title>
+      <link>https://emberlzhang.github.io/post/color-shape-task/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/post/color-shape-task/</guid>
+      <description>Description The Color Shape Task is an online web application written in JavaScript and JSPsych, a JavaScript framework made for psychology, neuroscience, and cognitive science researchers. The application back-end was built in a Flask-inspired research-specific framework called Psiturk, and setup to integrate with Amazon Mechanical Turk, a recruitment platform used for online research studies. Docker was used for a streamlined and stable deployment.&#xA;Code: https://github.com/DesrochersLab/seq1_online_app&#xA;Purpose The Color Shape Task is an online behavioral task developed for the Desrochers Lab of the Neuroscience department at Brown University to use on healthy populations during research studies on higher level sequential processing, a cognitive process involving the dorsolateral prefrontal cortex, potentially implicating conditions like obsessive compulsive disorder.</description>
     </item>
     <item>
       <title></title>

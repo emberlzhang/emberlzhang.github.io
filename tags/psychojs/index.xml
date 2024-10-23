@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Flask on Code by Ember Zhang</title>
-    <link>https://emberlzhang.github.io/tags/flask/</link>
-    <description>Recent content in Flask on Code by Ember Zhang</description>
+    <title>PsychoJS on Code by Ember Zhang</title>
+    <link>https://emberlzhang.github.io/tags/psychojs/</link>
+    <description>Recent content in PsychoJS on Code by Ember Zhang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2024 Ember Zhang</copyright>
-    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://emberlzhang.github.io/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://emberlzhang.github.io/tags/psychojs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dungeons and Portals</title>
-      <link>https://emberlzhang.github.io/post/dungeons-portals/</link>
-      <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/post/dungeons-portals/</guid>
-      <description>Description The Dungeons &amp;amp; Portals Game is a platformer game developed in vanilla JavaScript within a Flask application.&#xA;Link: https://dungeons-and-portals.onrender.com&#xA;Code: https://github.com/emberlzhang/task_dungeon-portals-game&#xA;Purpose The Dungeons &amp;amp; Portals Game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with behavioral compulsions and healthy control (HC) populations.&#xA;Overview Each round of the game, the player chooses a dungeon to enter, then tries to escape the dungeon using the fewest number of portal teleportations possible.</description>
+      <title>Yale Fish Task Development &amp; API Integration</title>
+      <link>https://emberlzhang.github.io/post/yale-fish-task/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/post/yale-fish-task/</guid>
+      <description>Description The Fishing Task is a game developed in JavaScript and Node.JS, and modelled upon an original version in PsychoJS. Additionally, API integrations with external services were done using AWS Lamdba.&#xA;Code: Purpose The Fishing Task is an online behavioral task developed for the Powers Lab at Yale Medical School to use on clinical and healthy populations during clinical studies on ketamine, a psychoactive used for pain relief, anxiety and mood disorders.</description>
     </item>
     <item>
       <title>Color Shape Task (Desrochers Lab - Brown University)</title>
