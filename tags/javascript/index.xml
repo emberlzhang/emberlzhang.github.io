@@ -35,7 +35,7 @@
       <link>https://emberlzhang.github.io/post/yale-fish-task/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>https://emberlzhang.github.io/post/yale-fish-task/</guid>
-      <description>Description The Fishing Task is a game developed in JavaScript and Node.JS, and modelled upon an original version in PsychoJS. Additionally, API integrations with external services were done using AWS Lamdba.&#xA;Code: Purpose The Fishing Task is an online behavioral task developed for the Powers Lab at Yale Medical School to use on clinical and healthy populations during clinical studies on ketamine, a psychoactive used for pain relief, anxiety and mood disorders.</description>
+      <description>Description The Fishing Task is a game developed in JavaScript and Node.JS, and modelled upon an original version in PsychoJS. Additionally, API integrations with external services were done in AWS Lamdba.&#xA;Purpose The Fishing Task is an online behavioral task developed for the Powers Lab at Yale Medical School to use on clinical and healthy populations during clinical studies on ketamine, a psychoactive used for pain relief, anxiety and mood disorders.</description>
     </item>
     <item>
       <title>Color Shape Task (Desrochers Lab - Brown University)</title>
