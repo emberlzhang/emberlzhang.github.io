@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JavaScript on Ember Zhang [Code]</title>
-    <link>https://emberlzhang.github.io/tags/javascript/</link>
-    <description>Recent content in JavaScript on Ember Zhang [Code]</description>
+    <title>Posts on Ember Zhang [Code]</title>
+    <link>https://emberlzhang.github.io/portfolio/</link>
+    <description>Recent content in Posts on Ember Zhang [Code]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2024 Ember Zhang</copyright>
     <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://emberlzhang.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://emberlzhang.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dungeons and Portals | Mount Sinai Hospital</title>
       <link>https://emberlzhang.github.io/portfolio/dungeons-portals/</link>

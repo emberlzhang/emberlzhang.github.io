@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PsychoJS on Code by Ember Zhang</title>
+    <title>PsychoJS on Ember Zhang [Code]</title>
     <link>https://emberlzhang.github.io/tags/psychojs/</link>
-    <description>Recent content in PsychoJS on Code by Ember Zhang</description>
+    <description>Recent content in PsychoJS on Ember Zhang [Code]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2024 Ember Zhang</copyright>
-    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://emberlzhang.github.io/tags/psychojs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fish Task &amp; API Integration (Yale School of Medicine)</title>
-      <link>https://emberlzhang.github.io/post/yale-fish-task/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/post/yale-fish-task/</guid>
-      <description>Description The Fishing Task is a game developed in JavaScript and Node.JS, and modelled upon an original version in PsychoJS. Additionally, API integrations with external services were done in AWS Lamdba.&#xA;Purpose The Fishing Task is an online behavioral task developed for the Powers Lab at Yale Medical School to use on clinical and healthy populations during clinical studies on ketamine, a psychoactive used for pain relief, anxiety and mood disorders.</description>
+      <title>Fishing Game | Yale School of Medicine</title>
+      <link>https://emberlzhang.github.io/portfolio/fish-task-yale/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/portfolio/fish-task-yale/</guid>
+      <description>Description The Fishing Game is an application developed in JavaScript and Node.JS, and modelled upon an original version in PsychoJS. Additionally, API integrations with external services, such as Redcap survey software, were completed in the existing AWS Lambda system.&#xA;Purpose The Fishing Game is an online behavioral task developed for the Powers Lab at Yale Medical School to use on clinical and healthy populations during clinical studies on ketamine, a psychoactive used for pain relief, anxiety and mood disorders.</description>
     </item>
     <item>
-      <title>Color Shape Task (Desrochers Lab - Brown University)</title>
-      <link>https://emberlzhang.github.io/post/color-shape-task/</link>
+      <title>Color Shape Task | Desrochers Lab</title>
+      <link>https://emberlzhang.github.io/portfolio/color-shape-task/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/post/color-shape-task/</guid>
-      <description>Description The Color Shape Task is an online web application written in JavaScript and JSPsych, a JavaScript framework made for psychology, neuroscience, and cognitive science researchers. The application back-end was built in a Flask-inspired research-specific framework called Psiturk, and setup to integrate with Amazon Mechanical Turk, a recruitment platform used for online research studies. Docker was used for a streamlined and stable deployment.&#xA;Code: https://github.com/DesrochersLab/seq1_online_app&#xA;Purpose The Color Shape Task is an online behavioral task developed for the Desrochers Lab of the Neuroscience department at Brown University to use on healthy populations during research studies on higher level sequential processing, a cognitive process involving the dorsolateral prefrontal cortex, potentially implicating conditions like obsessive compulsive disorder.</description>
+      <guid>https://emberlzhang.github.io/portfolio/color-shape-task/</guid>
+      <description>Description The Color Shape Task is an online web application written in JavaScript and JSPsych, a JavaScript framework made for psychology, neuroscience, and cognitive science researchers. The application back-end was built in a Flask-inspired research-specific framework called Psiturk, and setup to integrate with Amazon Mechanical Turk, a recruitment platform used for online research studies. Docker was used for a streamlined and stable deployment.&#xA;Code: https://github.com/DesrochersLab/seq1_online_app&#xA;Purpose The Color Shape Task is an online behavioral task developed for the Desrochers Neuroscience Lab at Brown University to use on healthy populations during research studies on higher level sequential processing, a cognitive process involving the dorsolateral and rostrolateral prefrontal cortex, potentially implicating conditions like obsessive compulsive disorder.</description>
     </item>
   </channel>
 </rss>

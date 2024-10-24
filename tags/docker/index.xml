@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Code by Ember Zhang</title>
+    <title>Docker on Ember Zhang [Code]</title>
     <link>https://emberlzhang.github.io/tags/docker/</link>
-    <description>Recent content in Docker on Code by Ember Zhang</description>
+    <description>Recent content in Docker on Ember Zhang [Code]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2024 Ember Zhang</copyright>
     <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://emberlzhang.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Color Shape Task (Desrochers Lab - Brown University)</title>
-      <link>https://emberlzhang.github.io/post/color-shape-task/</link>
+      <title>Color Shape Task | Desrochers Lab</title>
+      <link>https://emberlzhang.github.io/portfolio/color-shape-task/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/post/color-shape-task/</guid>
-      <description>Description The Color Shape Task is an online web application written in JavaScript and JSPsych, a JavaScript framework made for psychology, neuroscience, and cognitive science researchers. The application back-end was built in a Flask-inspired research-specific framework called Psiturk, and setup to integrate with Amazon Mechanical Turk, a recruitment platform used for online research studies. Docker was used for a streamlined and stable deployment.&#xA;Code: https://github.com/DesrochersLab/seq1_online_app&#xA;Purpose The Color Shape Task is an online behavioral task developed for the Desrochers Lab of the Neuroscience department at Brown University to use on healthy populations during research studies on higher level sequential processing, a cognitive process involving the dorsolateral prefrontal cortex, potentially implicating conditions like obsessive compulsive disorder.</description>
+      <guid>https://emberlzhang.github.io/portfolio/color-shape-task/</guid>
+      <description>Description The Color Shape Task is an online web application written in JavaScript and JSPsych, a JavaScript framework made for psychology, neuroscience, and cognitive science researchers. The application back-end was built in a Flask-inspired research-specific framework called Psiturk, and setup to integrate with Amazon Mechanical Turk, a recruitment platform used for online research studies. Docker was used for a streamlined and stable deployment.&#xA;Code: https://github.com/DesrochersLab/seq1_online_app&#xA;Purpose The Color Shape Task is an online behavioral task developed for the Desrochers Neuroscience Lab at Brown University to use on healthy populations during research studies on higher level sequential processing, a cognitive process involving the dorsolateral and rostrolateral prefrontal cortex, potentially implicating conditions like obsessive compulsive disorder.</description>
     </item>
   </channel>
 </rss>

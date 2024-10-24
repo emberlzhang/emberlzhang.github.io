@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>React.JS on Code by Ember Zhang</title>
+    <title>React.JS on Ember Zhang [Code]</title>
     <link>https://emberlzhang.github.io/tags/react.js/</link>
-    <description>Recent content in React.JS on Code by Ember Zhang</description>
+    <description>Recent content in React.JS on Ember Zhang [Code]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2024 Ember Zhang</copyright>
     <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://emberlzhang.github.io/tags/react.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Rose Garden Game</title>
-      <link>https://emberlzhang.github.io/post/rose-garden/</link>
+      <title>Rose Garden Game | Mount Sinai Hospital</title>
+      <link>https://emberlzhang.github.io/portfolio/rose-garden/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/post/rose-garden/</guid>
+      <guid>https://emberlzhang.github.io/portfolio/rose-garden/</guid>
       <description>Description The Rose Garden Game is a game developed in React.JS and JavaScript.&#xA;Code: https://github.com/emberlzhang/task_rose-garden_two-step&#xA;Purpose The Rose Garden game was designed for the Center for Computational Psychiatry at Mount Sinai Hospital to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &amp;ldquo;two-stage&amp;rdquo; task paradigm in cognitive behavioral research.&#xA;Gameplay The player plays rounds of two repeating choices followed in succession:</description>
     </item>
   </channel>

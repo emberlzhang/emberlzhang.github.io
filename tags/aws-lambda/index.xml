@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AWS Lambda on Code by Ember Zhang</title>
+    <title>AWS Lambda on Ember Zhang [Code]</title>
     <link>https://emberlzhang.github.io/tags/aws-lambda/</link>
-    <description>Recent content in AWS Lambda on Code by Ember Zhang</description>
+    <description>Recent content in AWS Lambda on Ember Zhang [Code]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2024 Ember Zhang</copyright>
-    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://emberlzhang.github.io/tags/aws-lambda/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fish Task &amp; API Integration (Yale School of Medicine)</title>
-      <link>https://emberlzhang.github.io/post/yale-fish-task/</link>
-      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/post/yale-fish-task/</guid>
-      <description>Description The Fishing Task is a game developed in JavaScript and Node.JS, and modelled upon an original version in PsychoJS. Additionally, API integrations with external services were done in AWS Lamdba.&#xA;Purpose The Fishing Task is an online behavioral task developed for the Powers Lab at Yale Medical School to use on clinical and healthy populations during clinical studies on ketamine, a psychoactive used for pain relief, anxiety and mood disorders.</description>
+      <title>Fishing Game | Yale School of Medicine</title>
+      <link>https://emberlzhang.github.io/portfolio/fish-task-yale/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://emberlzhang.github.io/portfolio/fish-task-yale/</guid>
+      <description>Description The Fishing Game is an application developed in JavaScript and Node.JS, and modelled upon an original version in PsychoJS. Additionally, API integrations with external services, such as Redcap survey software, were completed in the existing AWS Lambda system.&#xA;Purpose The Fishing Game is an online behavioral task developed for the Powers Lab at Yale Medical School to use on clinical and healthy populations during clinical studies on ketamine, a psychoactive used for pain relief, anxiety and mood disorders.</description>
     </item>
   </channel>
 </rss>
