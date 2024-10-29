@@ -51,33 +51,5 @@
       <guid>https://emberlzhang.github.io/tags/typescript/</guid>
       <description></description>
     </item>
-    <item>
-      <title>AWS Lambda</title>
-      <link>https://emberlzhang.github.io/tags/aws-lambda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/tags/aws-lambda/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PsychoJS</title>
-      <link>https://emberlzhang.github.io/tags/psychojs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/tags/psychojs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>https://emberlzhang.github.io/tags/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Psiturk</title>
-      <link>https://emberlzhang.github.io/tags/psiturk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://emberlzhang.github.io/tags/psiturk/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
