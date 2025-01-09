@@ -361,7 +361,6 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
 </section>
   <footer>
   </footer>
-  
 
   
   
@@ -389,45 +388,6 @@ Gameplay Overview The player plays rounds of two repeating choices followed in s
   
 </article>
 
-
-    <h3 id="description">Description</h3>
-<p>The Spaceships and Aliens Game is a game developed in JavaScript (TypeScript).</p>
-<p><strong>Link:</strong> <a href="https://task-twostep-git-master-emberlzhangs-projects.vercel.app">https://spaceships-aliens.vercel.app</a></p>
-<p><strong>Code:</strong> <a href="https://github.com/emberlzhang/task_spaceships-aliens_twostep">https://github.com/emberlzhang/task_spaceships-aliens_twostep</a></p>
-<h3 id="purpose">Purpose</h3>
-<p>The Spaceships and Aliens game is an online behavioral task designed for the <a href="https://github.com/Center-for-Computational-Psychiatry/">Center for Computational Psychiatry</a> at <a href="https://icahn.mssm.edu/research/center-for-computational-psychiatry/team">Mount Sinai Hospital</a> to differentiate between clinical populations with obsessive compulsive disorder (OCD) and healthy control (HC) populations. The task is inspired by the classic &ldquo;two-stage&rdquo; task paradigm in cognitive behavioral research.</p>
-<h3 id="gameplay-overview">Gameplay Overview</h3>
-<p>The player plays rounds of two repeating choices followed in succession:</p>
-<p><strong>Choice 1: Pick a space rocket to fly to outer space.</strong>
-<figure><img src="/spaceships_aliens_screenshot1.png" width="600">
-</figure>
-</p>
-<p><strong>Choice 2: Pick an alien trader.</strong>
-<figure><img src="/spaceships_aliens_screenshot2.png" width="600">
-</figure>
-</p>
-<p>After making these two choices, the player receives a valuable gem (worth 100 points), or dirt (worth zero points). The probability of receiving a gem or dirt depends on the user&rsquo;s choice of spaceship and alien trader.</p>
-<h3 id="features">Features</h3>
-<h4 id="probabalistic-game-logic">Probabalistic Game Logic</h4>
-<p>In Stage 1 of the game, the user&rsquo;s choice of rocket determine which of the two planets they land on.</p>
-<figure><img src="/spaceships_aliens_screenshot0.png" width="600">
-</figure>
-
-<p>In Stage 2 of the game, the resulting planet determines which two alien traders the user can choose to trade with. Subsequently, the user&rsquo;s choice of alien trader will determine, probabilistically, whether they receive a gem or dirt.</p>
-<figure><img src="/spaceships_aliens_screenshot3.png" width="600">
-</figure>
-
-<p>Over time, the player may notice certain combinations of rocketship / alien trader choices yield more favorable outcomes, and will thus select those choices.</p>
-<p><strong>Changing Probabilities Over Time</strong></p>
-<p>Over the course of the game, the gem probabilities associated with the aliens will fluctuate across trials for each of the four aliens, thus yielding different combinations for a favorable outcome. The user is encouraged to adapt, but not all users do.</p>
-<p>This ability (or lack thereof) to adapt to changing circumstances in the game over time is of great research interest, particularly with regard to compulsive behavior disorders.</p>
-<h4 id="automatic-local-data-download">Automatic, Local Data Download</h4>
-<p>For the purposes of satisfying this application&rsquo;s main use case, rather than saving user data to a standard relational database such as MySQL or PostgresQL, the application saves the game locally to the user&rsquo;s computer.</p>
-<p>This feature was developed for a specific research use case (e.g. research assistants prompting participants to play the game during on-site research sessions conducted in locations with limited internet access, such as an underground fMRI scanner room).</p>
-<p>The data automatically saves when the program is closed or the tab/window is exited, regardless of whether the task is completed. This ensures that data is preserved during interrupted user sessions as well as during testing.</p>
-<h3 id="significance-to-end-user">Significance to End User</h3>
-<p>The game tracks the player&rsquo;s preference towards task perseveration vs. context switching, with the expectation of higher task perseveration for compulsive behavior populations relative to healthy control populations.</p>
-<p>Player behavior and preferences are mapped to Bayesian inference models to discern group-level differences between HC populations and clinical behavioral compulsion groups.</p>
 
 
   </main>
